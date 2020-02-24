@@ -1,0 +1,17 @@
+{
+    "name": "tsms-guide",
+    "version": "1.0.0",
+    "description": "Tailor Shop Management System Documentation",
+    "repository": "https://github.com/Tecdiary/tsms-guide.git",
+    "author": "Mian Saleem <saleem@tecdiary.com>",
+    "scripts": {
+        "serve": "vuepress dev",
+        "pdf": "node ./generate.js",
+        "build": "vuepress build && cp -a ./assets/ ./docs"
+    },
+    "devDependencies": {
+        "markdown-pdf": "^9.0.0",
+        "through2": "^3.0.0",
+        "vuepress": "^0.14.2"
+    }
+}
