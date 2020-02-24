@@ -24,8 +24,8 @@ module.exports = {
         lastUpdated: 'Last Updated',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Report Bug', link: 'https://trello.com/b/pxHkpEws/tsms-simple-business-manager' },
-            { text: 'Buy Now', link: 'https://tecdiary.net/products/simple-business-manager-invoicing-solution' },
+            { text: 'Report Bug', link: 'https://github.com/Tecdiary/tsms-guide/issues' },
+            { text: 'Buy Now', link: 'https://tecdiary.net/products/tailor-shop-management-system-tsms' },
         ],
         sidebar: [
             {

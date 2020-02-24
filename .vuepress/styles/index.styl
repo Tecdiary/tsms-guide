@@ -16,7 +16,7 @@ body
             .nav-item > a:not(.external):hover,
             .nav-item > a:not(.external).router-link-active
                 color #E2E8F0
-                border-bottom 2px solid #E2E8F0
+                border-bottom 2px solid #718096
             .nav-item .nav-link.external
                 border-radius 3px
                 padding .25rem .5rem
@@ -25,9 +25,9 @@ body
             .nav-item:nth-child(3)
                 .nav-link.external
                     color #FFF
-                    background #4A5568
+                    background #DD6B20
                     &:hover
-                        background #2D3748
+                        background #C05621
             .repo-link
                 display none
     .suggestions
@@ -47,14 +47,34 @@ body
             &.active
                 color #FFF
                 font-weight bold
+                border-left 0
+        > .sidebar-links > li:not(:first-child)
+            margin-top 0
 
+    .sidebar-group-items
+        background-color #1A202C
+        border-left 4px solid #C05621
     .sidebar-group:not(.collapsable) .sidebar-heading,
     .sidebar-heading
         font-weight 400
         color #E2E8F0
+        display flex
+        align-items center
+        justify-conten center
+        border-left 0
+        padding 0.5rem 1rem
         &:hover, &:active, &.open
             color #F7FAFC
+            background-color #C05621
+        &.open
+            border-left 4px solid #C05621
+            background-color #1A202C
+            .sidebar-links
+                background-color #2d3748
 
+    .sidebar-heading .arrow
+        margin-left auto
+        margin-right 0.5rem
     .sidebar-heading .arrow.right
         border-left 6px solid #A0AEC0
 
