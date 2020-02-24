@@ -1,9 +1,9 @@
 {
-    "short_name": "SBMDoc",
-    "name": "SBM Documentation",
-    "background_color": "#3273dc",
+    "short_name": "TSMCD",
+    "name": "TSMS Documentation",
+    "background_color": "#1A202C",
     "orientation": "portrait-primary",
-    "theme_color": "#3273dc",
+    "theme_color": "#1A202C",
     "start_url": "/?app=true",
     "display": "standalone",
     "icons": [
