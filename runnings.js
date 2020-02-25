@@ -2,13 +2,13 @@ exports.header = {
     height: '1.5cm',
     contents: function(pageNum, numPages) {
         return (
-            "<p style='font-size: 10px; display: block; font-family: sans-serif; border-bottom: 1px dotted #CCC; padding-bottom: 10px; margin-bottom: 20px;'><a style='color: #007bff; font-weight: bold; text-decoration: none;' href='https://tecdiary.com/products/simple-business-manager'>Simple Business Manager (Accounting, Invoicing, CRM & Payments)</a> <span style='float:right'>" +
+            "<p style='font-size: 10px; display: block; font-family: sans-serif; border-bottom: 1px dotted #CCC; padding-bottom: 10px; margin-bottom: 20px;'><a style='color: #007bff; font-weight: bold; text-decoration: none;' href='https://tecdiary.net/products/tailor-shop-management-system-tsms'>Tailor Shop Management System (TSMA)</a> <span style='float:right'>" +
             pageNum +
             ' / ' +
             numPages +
             '</span></p>'
         );
-    }
+    },
 };
 
 exports.footer = {
@@ -24,7 +24,7 @@ exports.footer = {
             numPages +
             '</span> © ' +
             new Date().getFullYear() +
-            ' <a style="color: #007bff; font-weight: bold; text-decoration: none;" href="https://tecdiary.com">Tecdiary.com</a> All Rights Reserved.</p>'
+            ' <a style="color: #007bff; font-weight: bold; text-decoration: none;" href="https://tecdiary.net">Tecdiary.net</a> All Rights Reserved.</p>'
         );
-    }
+    },
 };
