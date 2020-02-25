@@ -6,9 +6,9 @@
 
 ## General
 
-### How many products can be managed with this Simple Business Manager?
+### How many services can be managed with this Tailor Shop Management System?
 
-You can have any number of products.
+You can have any number of service but in most of the tailor shop they won't have much services but few general ones.
 
 ### Can I modify the item?
 
@@ -24,19 +24,19 @@ No, you can only manage single business with single installation.
 
 ### Can I white label it to have my company name and logo?
 
-Yes, you can. Please update the App Name in system settings.
+No, there is no option to change logo. Please update the Name in settings, you can upload the order logo (will be used on view order page)
 
-### How can I change the invoice logo?
+### How can I change the order logo?
 
-Please upload the new logo from invoices settings.
+Please upload the new logo from settings.
 
 ### How can I translate into other language?
 
 No, version 1 only have English language and not translate-able. We add this feature in future updates.
 
-### How can I enable Indian GST?
+### How can I enable Taxes?
 
-You don't have to enable it, just add taxes and then assign those to your products. System will automatically calculate the correct taxes for you depending on the invoice and customer/vendor states. This is useful for all other countries those uses state related taxes such as Canada.
+You can add taxes on order page as you need or set the default in settings
 
 ### Can I install this item on localhost?
 
@@ -44,64 +44,45 @@ Yes, you can install this item on localhost with any web platform xampp, mamp, l
 
 ### Can I use it offline if I have installed it on live server?
 
-SBM has option to cache the get requests only. You won't be able to post any data but if you have visited the page before and Internet is down, you will be able to view the page (it will be loaded from cache).
+TSMS has option to cache the get requests only. You won't be able to post any data but if you have visited the page before and Internet is down, you will be able to view the page (it will be loaded from cache).
 
 ### Will I get the full source code?
 
 Yes, for Standard and Extended Licenses. For Regular license, you will only get back-end code and won't be able to modify the front-end.
-
-### Can I can sell the products even if I don't have stock?
-
-Yes, you can sell the product even if it's out of stock, system will set the quantity to -ve and adjust it on purchase.
 
 ### How can I setup cron job?
 
 You can setup cron job as following:
 
 ```
-* * * * * cd path/to/your/sbm && php artisan schedule:run >> /dev/null 2>&1
+* * * * * cd path/to/your/tsms && php artisan schedule:run >> /dev/null 2>&1
 ```
 
-If you need help, please check with your host and ask them how you can setup cron job for Laravel, docs can be found at [https://laravel.com/docs/5.8/scheduling](https://laravel.com/docs/5.8/scheduling)
+If you need help, please check with your host and ask them how you can setup cron job for Laravel, docs can be found at [https://laravel.com/docs/6.x/scheduling](https://laravel.com/docs/6.x/scheduling)
 
 ### Why I need to set cron job?
 
-Cron job need to be set to generate recurring invoices and send payment requests for due payments.
-
-### How can I change the view bill promo content?
-
-You can edit the code of `resources` / `views` / `invoices` | `purchases` | `payments` / `minimal` | `simple` | `modern` `.blade.php`
+Cron job need to be set to generate recurring salaries and send payment requests for due payments.
 
 ## Users
 
 ### How many user roles are available?
 
-SBM has 3 User Roles
+TSMS has 3 User Roles
 
-1.  Super (super admin)
+1.  Owner (super admin)
     -   Can perform all actions
-2.  Admin (administrator)
+2.  Tailor (taff)
     -   Can't delete any data/records
     -   Can add/edit/view almost all data except settings & users
-3.  Staff (sales staff)
-    -   Can't edit any data/records
-    -   Can't delete any data/records
-    -   Can only view own added records for invoices, purchases & payments
-    -   Can add products, customers, vendors, invoices, purchases & payments
-4.  Customer (site customer)
-    -   Can update customer company details
-    -   Can view own invoice, recurring invoice and payments
-5.  Vendor (site vendor)
-    -   Can update vendor company details
-    -   Can view own purchases and payments
 
 ### Which one is the default user role?
 
-No one is default, after you have added the user, please edit to assign roles.
+Tailor role will be default, if you have not checked the owner check box while adding the user.
 
 ### Where can I assign role to user?
 
-After you have added the user, please edit new added user to assign roles as you need.
+You can edit the user to change the role.
 
 ### Can I add new user role?
 
@@ -109,13 +90,9 @@ No, you can't add new user role.
 
 ## Payments
 
-### What payment gateways are available in SBM?
+### What payment gateways are available in TSMS?
 
-PayPal for online payments while for credit/debit card you can choose from Stripe, PayPal Pro, PayPal Rest APIs and Authorize.net
-
-### Can I have recurring invoice or subscription?
-
-Yes, you can add recurring invoice and system will generate invoice and payment request automatically once the cron job run.
+Only offline payment and option can be set in settings. We will add online payment such as PayPal and credit/debit card using Stripe, PayPal Pro, PayPal Rest APIs and Authorize.net
 
 ## Errors
 
@@ -130,7 +107,7 @@ You can try different host and/or install it locally with any web platform `easy
 You shouldn't get such error if the server requirements were fine while installing the item.
 
 500 are server internal errors and you can check your server error log to get more details of the error, if you are on live server and not sure, you
-can check with your host. Once you have the error details please email to support@tecdiary.com with details, we will check and suggest you the solution.
+can check with your host. Once you have the error details please post on support portal (https://tecdiary.net/support) with details, we will check and suggest you the solution.
 
 ### MySQL cannot connect via "localhost" but only "127.0.0.1"?
 
@@ -140,12 +117,12 @@ What exactly is wrong with your unix socket is hard to tell. But I recommend you
 
 ### Why I can't send emails?
 
-Please double check your email configuration details in system settings.
+Please double check your email configuration details in settings.
 
 ### Why I am getting db error and can't login?
 
 Please make sure that your database server is up and running, then check .env file in main directory for database details.
 
-### Why some products are missing from order when I add 100+ products?
+### Why some services are missing from order when I add 50+ services?
 
-There is no restriction in SBM code on the number of order items. If you are having such issue, please check your PHP configuration file (php.ini) for `max_input_vars` and set it to higher number i.e, 10000. You might need to increase `max_input_time` and `max_execution_time` too.
+There is no restriction in TSMS code on the number of order services. If you are having such issue, please check your PHP configuration file (php.ini) for `max_input_vars` and set it to higher number i.e, 20000. You might need to increase `max_input_time` and `max_execution_time` too.

@@ -8,29 +8,11 @@ Regular license doesn't come with front-end (vue), feature tests, database migra
 
 ## Modify Order Templates
 
-Order template view files can be found in these folders
+Order view file is `resources/js/Pages/Orders/Show.vue`
 
--   **Invoice Templates**
+## Modify Notification Templates
 
-    1.  **Minimal** `resources` / `views` / `invoices` / `minimal.blade.php`
-    2.  **Simple** `resources` / `views` / `invoices` / `simple.blade.php`
-    3.  **Modern** `resources` / `views` / `invoices` / `modern.blade.php`
-
--   **Purchase Templates**
-
-    1.  **Minimal** `resources` / `views` / `purchases` / `minimal.blade.php`
-    2.  **Simple** `resources` / `views` / `purchases` / `simple.blade.php`
-    3.  **Modern** `resources` / `views` / `purchases` / `modern.blade.php`
-
--   **Payment Templates**
-
-    1.  **Minimal** `resources` / `views` / `payments` / `minimal.blade.php`
-    2.  **Simple** `resources` / `views` / `payments` / `simple.blade.php`
-    3.  **Modern** `resources` / `views` / `payments` / `modern.blade.php`
-
-## Modify Email Templates
-
-You can modify the email templates from application but if you need to modify the main template then you can check `resources` / `views` / `mail` / `template.blade.php` as all other templates extends the main email template file.
+You can modify the notifications from `app/Notifications/` folder.
 
 ## Standard/Extended License
 
@@ -41,9 +23,7 @@ If you have purchases standard/extended license then you will get the minimal do
 composer install
 
 # Install front-end (npm) dependencies with
-npm i               # with npm
-
-yarn                # if you prefer yarn
+npm install
 
 npm run dev         # to compile
 npm run watch       # to compile and watch
@@ -54,7 +34,7 @@ As you know the front-end is Vuejs and back-end Laravel. If you need any help re
 
 ### Where is the manifest file.
 
-Manifest file is being generated with laravel route and you can check `manifest` method of the `app` / `Http` / `Controllers` / `AjaxController.php`
+Manifest file `resources/sw/manifest.json`
 
 ### Where is the service worker file.
 
@@ -62,14 +42,12 @@ Service worker is being generated with laravel mix and you can check the `webpac
 
 ## Front-end App
 
-The front end is not api based but tradition web app and the source code can be found in `resources/assets/js/`
+The front end source code can be found in `resources/js/`
 
-main app file `resources` / `assets` / `js` / `app.js`<br>
-vue router file `resources` / `assets` / `js` / `routes.js`<br>
-vuex store file `resources` / `assets` / `js` / `store` / `index.js`<br>
-vue components folder `resources` / `assets` / `js` / `components`
+main app file `resources/js/app.js`<br>
+page files `resources/js/Pages`<br>
 
-main scss file `resources` / `assets` / `sass` / `app.scss`
+main scss file `resources/css/app.css`
 
 ## Support for Modifications
 
@@ -81,4 +59,4 @@ Yes, we do provide customization/modification. We charge \$50/hours and availabi
 
 ### I can't find answer in docs?
 
-If you can't find the answer here, you can email to support@tecdiary.com but please don't ask modification related questions as we might not be able to help you with modifications as mentioned above.
+If you can't find the answer here, you can post at official support portal [https://tecdiary.net/support](https://tecdiary.net/support).
