@@ -17,9 +17,9 @@ function preProcessMd() {
             )
             .replace(/## Orders Table/, pageBreak + '## Orders Table')
             .replace(/\/tsms-guide\/assets\/img/gs, 'assets/assets/img')
-            .replace(/::: tip/gs, '<div class="tip">')
-            .replace(/::: warning/gs, '<div class="warning">')
-            .replace(/:::/gs, '</div>')
+            .replace(/::: tip/gs, '')
+            .replace(/::: warning/gs, '')
+            .replace(/:::/gs, '')
             .replace(/`composer install`/gs, '<code>composer install</code>')
             .replace(/\[\[toc\]\]/, '');
         cb(null, new Buffer.from(nd + pageBreak));

@@ -26,7 +26,7 @@ Please add a virtual host that should point to public directory in tsms `full/pa
 If you need to install in as main domain `yourdomain.com` but not subdoamin `subdomain.yourdoamin.com`, you still follow the above instructions and then create symbolic link for public_html `ln -s /tsms/public /public_html`. You can check with your host about this and tell them that you was to secure Laravel installation.
 :::
 
-You can access the installer by added `/install` at the end of your domain i.e,
+You can access the installer by adding `/install` at the end of your domain i.e,
 
 -   `https:` // `yourdomain.com` / `install` for main domain installation
 -   `https:` // `yourdomain.com` / `subfolder` / `install` for sub directory installation
