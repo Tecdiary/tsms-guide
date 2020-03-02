@@ -24,8 +24,8 @@ module.exports = {
         lastUpdated: 'Last Updated',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Report Bug', link: 'https://github.com/Tecdiary/tsms-guide/issues' },
-            { text: 'Buy Now', link: 'https://tecdiary.net/products/tailor-shop-management-system-tsms' },
+            { text: 'Report Bug', link: 'https://tecdiary.net/support/tailor-shop-management-system-tsms-web/report_bug' },
+            { text: 'Buy Now', link: 'https://tecdiary.net/products/tailor-shop-management-system-tsms-web' },
         ],
         sidebar: [
             {

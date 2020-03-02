@@ -7,6 +7,7 @@
     "scripts": {
         "serve": "vuepress dev",
         "pdf": "node ./generate.js",
+        "pack": "npm run build && npm run pdf",
         "build": "vuepress build && cp -a ./assets/ ./docs"
     },
     "devDependencies": {
