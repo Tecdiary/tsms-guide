@@ -89,7 +89,9 @@ Please use the [Support Portal](https://tecdiary.net/support) to request feature
 
 ## Support Request
 
-If you can't find answer here in docs, you are suggested to post questions at [Support Portal](https://tecdiary.net/support). Please be patient while accepting our response as it could take 24 - 48 hours to get response.
+If you can't find answer here in docs, you are suggested to ask questions at [Support Portal](https://tecdiary.net/support). Please be patient while accepting our response as it could take 24 - 48 hours to get response.
+
+If you have purcahsed item from Envato (CodeCanyon) you need to validate your purchase code at [Support Portal](https://tecdiary.net/support) to add item to your supported list. Once added, item will trun to green and you should be able to ask support questions. 
 
 ## Partnership/Bulk Licenses
 
