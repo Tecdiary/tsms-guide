@@ -32,7 +32,7 @@ Please upload the new logo from settings.
 
 ### How can I translate into other language?
 
-No, version 1 only have English language and not translate-able. We add this feature in future updates.
+Please duplicate `resources/lang/en.json` and `resources/lang/en/` then translate them. Once tranlslated, you can add your language entry in `resources/lang/languages.json` and run `npm i` && `npm run prod` to build the vue application. 
 
 ### How can I enable Taxes?
 
